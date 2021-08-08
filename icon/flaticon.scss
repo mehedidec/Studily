@@ -1,0 +1,37 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?3c39a4f9de7d24c604abc5c41ba18b4e") format("truetype"),
+url("./flaticon.woff?3c39a4f9de7d24c604abc5c41ba18b4e") format("woff"),
+url("./flaticon.woff2?3c39a4f9de7d24c604abc5c41ba18b4e") format("woff2"),
+url("./flaticon.eot?3c39a4f9de7d24c604abc5c41ba18b4e#iefix") format("embedded-opentype"),
+url("./flaticon.svg?3c39a4f9de7d24c604abc5c41ba18b4e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "artificial-intelligence": "\f101",
+    "decorating": "\f102",
+    "clipboard": "\f103",
+);
+
+.flaticon-artificial-intelligence:before {
+    content: map-get($flaticon-map, "artificial-intelligence");
+}
+.flaticon-decorating:before {
+    content: map-get($flaticon-map, "decorating");
+}
+.flaticon-clipboard:before {
+    content: map-get($flaticon-map, "clipboard");
+}
