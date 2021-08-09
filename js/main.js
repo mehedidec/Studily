@@ -103,7 +103,10 @@ $(function(){
       });
 
     //iFrame
-    $('iframe.cls-vdo').responsiveIframe();
+    $('.venobox').venobox({
+      bgcolor: 'rgba(86, 7, 201, 0.85)',
+      closeColor: 'rgba(86, 7, 201)'
+  });
 
     //scroll
     $(window).scroll(function () { 
