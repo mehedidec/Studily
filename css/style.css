@@ -603,6 +603,40 @@ h1,h2,h3,h4,h5,h6,p{
 #classes .classes_video{
     padding-top: 80px;
 }
+#classes .classes_video .video_content{
+    position: relative;
+    cursor: pointer;
+}
+#classes .classes_video .video_content svg{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 68px;
+    height: 48px;
+    transition: opacity .25s cubic-bezier(0,0,0.2,1);
+    -webkit-transition: opacity .25s cubic-bezier(0,0,0.2,1);
+    -moz-transition: opacity .25s cubic-bezier(0,0,0.2,1);
+    -ms-transition: opacity .25s cubic-bezier(0,0,0.2,1);
+    -o-transition: opacity .25s cubic-bezier(0,0,0.2,1);
+}
+#classes .classes_video .video_content .yt_play_btn{
+	-webkit-transition: fill .1s cubic-bezier(0.4,0,1,1),fill-opacity .1s cubic-bezier(0.4,0,1,1);
+	transition: fill .1s cubic-bezier(0.4,0,1,1),fill-opacity .1s cubic-bezier(0.4,0,1,1);
+	fill: #212121;
+	fill-opacity: .8;
+}
+#classes .classes_video .video_content:hover .yt_play_btn{
+	-webkit-transition: fill .1s cubic-bezier(0,0,0.2,1),fill-opacity .1s cubic-bezier(0,0,0.2,1);
+	transition: fill .1s cubic-bezier(0,0,0.2,1),fill-opacity .1s cubic-bezier(0,0,0.2,1);
+	fill: #f00;
+	fill-opacity: 1;
+}
 #classes .classes_video_info h2{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
